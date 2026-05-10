@@ -3,6 +3,7 @@
 import { motion, useInView, AnimatePresence } from "framer-motion"
 import { useRef, useState } from "react"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image"
 import { siteContent } from "@/lib/content"
 
 const aspectRatios = ["landscape", "portrait", "square", "landscape", "portrait", "square"]
@@ -62,9 +63,13 @@ export function Gallery() {
                       aspectRatio: aspect === "portrait" ? "3/4" : aspect === "landscape" ? "4/3" : "1/1",
                     }}
                   >
-                    <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30 text-xs p-4 text-center">
-                      {image.alt}
-                    </div>
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                    />
                     <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
                   </motion.button>
                 )
@@ -116,12 +121,17 @@ export function Gallery() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="max-w-4xl w-full mx-6 aspect-video bg-primary-foreground/10 flex items-center justify-center"
+              className="max-w-4xl w-full mx-6 relative"
+              style={{ aspectRatio: "16/10" }}
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="text-primary-foreground/40 text-sm">
-                {siteContent.gallery.images[selectedIndex]?.alt}
-              </span>
+              <Image
+                src={siteContent.gallery.images[selectedIndex]?.src}
+                alt={siteContent.gallery.images[selectedIndex]?.alt}
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
             </motion.div>
 
             {/* Counter */}

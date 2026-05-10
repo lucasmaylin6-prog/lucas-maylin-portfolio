@@ -5,7 +5,7 @@
 export const siteContent = {
   // ---- GENERAL INFO ----
   name: "Lucas Maylin",
-  tagline: "Percussionist, Composer & Arranger",
+  tagline: "Percussionist, Multi-instrumentalist & Composer",
   location: "Panama City, Panama",
   email: "hello@lucasmaylin.com",
   phone: "+507 6000 0000",
@@ -21,24 +21,26 @@ export const siteContent = {
   // ---- HERO SECTION ----
   hero: {
     title: "Lucas Maylin",
-    subtitle: "Percussionist — Composer — Arranger",
+    subtitle: "Percussionist — Multi-instrumentalist — Composer",
     scrollText: "Scroll to explore",
   },
 
   // ---- ABOUT SECTION ----
   about: {
     sectionLabel: "About",
-    headline: "Rooted in tradition, reaching toward the future",
+    headline: "Music as a space for cultural encounter and social change",
     paragraphs: [
-      "Lucas Maylin is a Panamanian percussionist, composer, and arranger whose work bridges folkloric traditions with contemporary jazz and experimental music. His practice is grounded in the rich rhythmic heritage of Panama and the African diaspora, while constantly exploring new sonic territories.",
-      "With a deep commitment to research and cultural preservation, Lucas approaches music as both an artistic practice and a form of knowledge — documenting, analyzing, and reimagining the sounds that have shaped his identity and community.",
+      "Lucas Maylin is a Panamanian percussionist, multi-instrumentalist, and composer whose work bridges Afro-Panamanian, Afro-Cuban, and African traditions with jazz and contemporary music. His artistic practice explores music as a space for cultural encounter, collective creation, and social change.",
+      "Beginning his musical journey at age five at the Fundación Danilo Pérez, Lucas has developed extensive work as a percussionist on congas, timbales, and bongó, as well as in Panamanian folkloric percussion, drum set, electric guitar, electric bass, and classical double bass. This instrumental journey has allowed him to develop a comprehensive musical vision rooted in Panamanian and Afro-Panamanian music, Afro-Cuban traditions, jazz, Latin jazz, and tambo jazz.",
+      "Lucas has shared the stage with internationally recognized artists including Danilo Pérez, Terri Lyne Carrington, John Patitucci, Brian Blade, Jazz at Lincoln Center Orchestra, the Berklee Global Jazz Institute, and many others. He is a recipient of the Berklee College of Music Presidential Scholarship and continues to evolve as an artist guided by a deep connection to his cultural roots and a clear belief in the transformative power of music.",
     ],
     stats: [
-      { number: "15+", label: "Years of Practice" },
+      { number: "12+", label: "Years of Practice" },
       { number: "50+", label: "Live Performances" },
-      { number: "12", label: "Research Projects" },
+      { number: "6+", label: "Instruments" },
     ],
     imageAlt: "Lucas Maylin portrait",
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-14-vmcPmGn6CyDDMqSCl7ehLX0OoVbVY9.jpg",
   },
 
   // ---- ARCHIVE SECTION ----
@@ -112,32 +114,32 @@ export const siteContent = {
     headline: "Selected Works",
     items: [
       {
-        title: "Raíces Project",
-        year: "2024",
+        title: "Lucas Maylin Quartet",
+        year: "Present",
         description:
-          "A multimedia performance exploring the roots of Panamanian percussion traditions through live music, video, and spoken word.",
-        tags: ["Performance", "Multimedia"],
+          "A project dedicated to performing original compositions based on diverse musical fusions, featuring percussion and guitar.",
+        tags: ["Ensemble", "Original Music"],
       },
       {
-        title: "Jazz en el Casco",
-        year: "2023",
+        title: "Los Nietos del Jazz",
+        year: "2019 — Present",
         description:
-          "Monthly concert series bringing contemporary jazz to the historic Casco Viejo district of Panama City.",
-        tags: ["Concert Series", "Curation"],
+          "An ensemble of young Panamanian musicians whose lives have been transformed through music as a tool for social change.",
+        tags: ["Ensemble", "Social Impact"],
       },
       {
-        title: "Tambor Collective",
-        year: "2022 — Present",
-        description:
-          "An ensemble dedicated to the preservation and evolution of Afro-Panamanian drum traditions.",
-        tags: ["Ensemble", "Education"],
-      },
-      {
-        title: "Sound Archive Panama",
+        title: "Panamá Connections",
         year: "2021 — Present",
         description:
-          "A digital archive preserving field recordings and oral histories from traditional musicians across Panama.",
-        tags: ["Archive", "Research"],
+          "An ensemble of faculty from the Fundación Danilo Pérez that blends Panamanian folklore with jazz.",
+        tags: ["Ensemble", "Folklore"],
+      },
+      {
+        title: "Big Band - Red Nacional de Orquestas",
+        year: "2024 — Present",
+        description:
+          "Member of the Big Band of the Red Nacional de Orquestas de Panamá as a bassist.",
+        tags: ["Orchestra", "Bass"],
       },
     ],
   },
@@ -200,12 +202,36 @@ export const siteContent = {
     sectionLabel: "Gallery",
     headline: "Moments",
     images: [
-      { id: 1, alt: "Performance at Panama Jazz Festival" },
-      { id: 2, alt: "Studio recording session" },
-      { id: 3, alt: "Workshop with students" },
-      { id: 4, alt: "Live concert at Teatro Nacional" },
-      { id: 5, alt: "Traditional drum ceremony" },
-      { id: 6, alt: "Rehearsal with ensemble" },
+      { 
+        id: 1, 
+        alt: "Lucas Maylin playing guitar on stage",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-37.JPEG-l3xqXAD6ly3Qf71MBurOjmGYjORGoU.jpeg"
+      },
+      { 
+        id: 2, 
+        alt: "Lucas Maylin playing congas at RNF Live",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5753%20%281%29-M5DCgC3pyy3eXsuLUY14NFbi9K2075.jpg"
+      },
+      { 
+        id: 3, 
+        alt: "Lucas Maylin performing percussion at Panama Jazz Festival",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2437.JPG-wBBF37ndJi4G1CClZGHM9pStvy4J63.jpeg"
+      },
+      { 
+        id: 4, 
+        alt: "Ensemble performance at Fundación Danilo Pérez",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fotos%20Jazz--3-JW6cg26FlqK2ZXJZt4ezSVPOu5PNOH.jpg"
+      },
+      { 
+        id: 5, 
+        alt: "Lucas Maylin taking a bow after performance",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.JPEG-ai3OoNugUX9jeqKgVfYtJm54cynsjL.jpeg"
+      },
+      { 
+        id: 6, 
+        alt: "Lucas Maylin portrait on geometric tiles",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-14-vmcPmGn6CyDDMqSCl7ehLX0OoVbVY9.jpg"
+      },
     ],
   },
 
