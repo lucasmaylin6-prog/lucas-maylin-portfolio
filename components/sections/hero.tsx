@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
+import Image from "next/image"
 import { siteContent } from "@/lib/content"
 
 export function Hero() {
@@ -9,6 +10,17 @@ export function Hero() {
   
   return (
     <section className="relative min-h-screen flex items-end pb-16 md:pb-24 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2437.JPG-wBBF37ndJi4G1CClZGHM9pStvy4J63.jpeg"
+          alt="Lucas Maylin performing"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
+      </div>
       <div className="container mx-auto px-6 lg:px-16 relative z-10">
         <div className="max-w-5xl">
           {/* Main Title */}
