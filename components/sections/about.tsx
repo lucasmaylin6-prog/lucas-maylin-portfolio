@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
+import Image from "next/image"
 import { siteContent } from "@/lib/content"
 
 export function About() {
@@ -21,17 +22,15 @@ export function About() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="lg:col-span-5 relative"
             >
-              <div className="aspect-[3/4] bg-muted overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-muted-foreground text-sm">
-                    <div className="w-14 h-14 border border-border flex items-center justify-center mx-auto mb-3">
-                      <span className="font-serif text-xl">
-                        {siteContent.name.split(" ").map(n => n[0]).join("")}
-                      </span>
-                    </div>
-                    {siteContent.about.imageAlt}
-                  </div>
-                </div>
+              <div className="aspect-[3/4] bg-muted overflow-hidden relative">
+                <Image
+                  src={siteContent.about.imageSrc}
+                  alt={siteContent.about.imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                />
               </div>
             </motion.div>
 

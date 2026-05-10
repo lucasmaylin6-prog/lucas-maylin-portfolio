@@ -40,6 +40,7 @@ export const siteContent = {
       { number: "6+", label: "Instruments" },
     ],
     imageAlt: "Lucas Maylin portrait",
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-14-vmcPmGn6CyDDMqSCl7ehLX0OoVbVY9.jpg",
   },
 
   // ---- ARCHIVE SECTION ----
@@ -201,12 +202,36 @@ export const siteContent = {
     sectionLabel: "Gallery",
     headline: "Moments",
     images: [
-      { id: 1, alt: "Performance at Panama Jazz Festival" },
-      { id: 2, alt: "Studio recording session" },
-      { id: 3, alt: "Workshop with students" },
-      { id: 4, alt: "Live concert at Teatro Nacional" },
-      { id: 5, alt: "Traditional drum ceremony" },
-      { id: 6, alt: "Rehearsal with ensemble" },
+      { 
+        id: 1, 
+        alt: "Lucas Maylin playing guitar on stage",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-37.JPEG-l3xqXAD6ly3Qf71MBurOjmGYjORGoU.jpeg"
+      },
+      { 
+        id: 2, 
+        alt: "Lucas Maylin playing congas at RNF Live",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5753%20%281%29-M5DCgC3pyy3eXsuLUY14NFbi9K2075.jpg"
+      },
+      { 
+        id: 3, 
+        alt: "Lucas Maylin performing percussion at Panama Jazz Festival",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2437.JPG-wBBF37ndJi4G1CClZGHM9pStvy4J63.jpeg"
+      },
+      { 
+        id: 4, 
+        alt: "Ensemble performance at Fundación Danilo Pérez",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fotos%20Jazz--3-JW6cg26FlqK2ZXJZt4ezSVPOu5PNOH.jpg"
+      },
+      { 
+        id: 5, 
+        alt: "Lucas Maylin taking a bow after performance",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.JPEG-ai3OoNugUX9jeqKgVfYtJm54cynsjL.jpeg"
+      },
+      { 
+        id: 6, 
+        alt: "Lucas Maylin portrait on geometric tiles",
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUCAS%20MAYLIN%20AM%20TRADE%20130624%20X%20LUIS%20CANTILLO-14-vmcPmGn6CyDDMqSCl7ehLX0OoVbVY9.jpg"
+      },
     ],
   },
 
